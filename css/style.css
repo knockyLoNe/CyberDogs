@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Intro;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+
+  background-color: #000000;
+  background-image: url(/img/background-layer.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Шрифты */
+
+@font-face {
+  font-family: 'Intro';
+  src: url('/fonts/intro.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'Intro-Book-Italic';
+  src: url('/fonts/Intro-Book-Italic.otf') format('eot');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+
+  font-family: 'Intro-Book';
+  src: url('/fonts/Intro-Book.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---- */
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* footer */
+
+.main-header {
+  margin-bottom: 75px;
+}
+
+.main-header-logo {
+  width: 68px;
+  height: 14px;
+  padding-top: 28px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-navigation,
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+}
+
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.social-wrapper {
+  padding-top: 13px;
+  padding-right: 13px;
+  width: 120px;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: rgba(255, 45, 82, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+/* ----- */
+
+/* Основаная инфа */
+
+.index-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-logo {
+  padding-left: 200px;
+  width: 320px;
+}
+
+.about-team {
+  margin-top: 137px;
+  width: 624px;
+}
+
+.about-team h2 {
+  font-size: 60px;
+}
+
+.about-team h3 {
+  font-size: 25px;
+}
+
+.salem-logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.salem-logo-wrapper p {
+  margin: 0;
+  margin-left: 18px;
+}
+
+
+/* ------ */
+
+
+
+
+
+.big-heading {
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Таблица */
+
+.inner-content {
+  margin-bottom: 30px;
+}
+
+.inner-content .custom-table-1 td {
+  padding: 15px 10px;
+
+  background-color: #9b0b05;
+
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.custom-table-1 {
+  width: 100%;
+}
+
+.custom-table-2 {
+  width: 100%;
+}
+
+/* footer */
+
+.main-footer {
+  font-size: 11px;
+  line-height: 14px;
+  color: #ffffff;
+
+  margin-top: 30px;
+  padding: 18px 0;
+
+  background-color: #9b0b05;
+}
+
+footer ul {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+  width: 112px;
+
+  margin: 17px auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-social {
+  width: 220px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+
+  background-color: transparent;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: rgba(255, 45, 82, 0.2);
+  border-radius: 10px;
+}
