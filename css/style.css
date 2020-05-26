@@ -9,10 +9,10 @@ body {
   color: #ffffff;
   text-transform: uppercase;
 
-
   background-color: #000000;
-  background-image: url(/img/background-layer.png);
-  background-position: top center;
+  background-image: url(/img/background-layer.png),
+    url(/img/background-layer2.png);
+  background-position: top center, bottom center;
   background-repeat: no-repeat;
 }
 
@@ -42,7 +42,6 @@ body {
 }
 
 @font-face {
-
   font-family: 'Intro-Book-Italic';
   src: url('/fonts/Intro-Book-Italic.otf') format('eot');
   font-weight: normal;
@@ -50,9 +49,15 @@ body {
 }
 
 @font-face {
-
   font-family: 'Intro-Book';
   src: url('/fonts/Intro-Book.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intro-bold';
+  src: url('/fonts/Intro-Bold.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -106,8 +111,31 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 620px;
+  font-family: 'intro book';
 }
 
+.site-navigation-current {
+  font-family: 'intro';
+  position: relative;
+}
+
+.site-navigation li:hover,
+.site-navigation li:focus {
+  font-family: 'intro';
+}
+
+.site-navigation-current::after {
+  content: '';
+
+  position: absolute;
+  right: 44px;
+  top: 38px;
+  width: 35px;
+  height: 6px;
+
+  background-color: #9b0b05;
+  background-image: url(/img/red-line.png);
+}
 
 .main-navigation-wrapper {
   width: 100%;
@@ -125,7 +153,6 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-
 }
 
 .social-wrapper {
@@ -149,8 +176,6 @@ a {
   border-radius: 10px;
   cursor: pointer;
 }
-
-
 
 /* ----- */
 
@@ -182,6 +207,7 @@ a {
 .salem-logo-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .salem-logo-wrapper p {
@@ -189,12 +215,28 @@ a {
   margin-left: 18px;
 }
 
+.book-text {
+  font-family: 'intro book';
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+}
 
 /* ------ */
+/* Карточки игроков */
 
+.payer-card {
+  display: flex;
 
+  margin: 0 auto;
 
+  position: relative;
+  width: 447px;
+  height: 251;
+  background-color: #transparent;
+}
 
+/* ------ */
 
 .big-heading {
   font-size: 25px;
@@ -203,28 +245,130 @@ a {
 }
 
 /* Таблица */
-
-.inner-content {
-  margin-bottom: 30px;
+.table-games {
+  font-family: 'intro';
+  font-size: 14px;
 }
 
-.inner-content .custom-table-1 td {
-  padding: 15px 10px;
+.table-games-1 {
+  font-family: 'intro bold';
+  font-size: 11px;
+  text-transform: none;
+}
 
+.table-games {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.table-games li {
+  width: 895px;
+  display: flex;
+  justify-content: space-between;
   background-color: #9b0b05;
-
+  margin: 0 auto;
 }
 
-.inner-content table {
-  border-collapse: collapse;
+.table-games-1 {
+  position: relative;
+  list-style: none;
+  width: 895px;
+  margin: 18px auto;
+  padding-left: 115px;
 }
 
-.custom-table-1 {
-  width: 100%;
+.table-games-1 p {
+  margin-bottom: 15px;
 }
 
-.custom-table-2 {
-  width: 100%;
+.table-games-logo::before {
+  content: '';
+
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(/img/cs-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.focus-red-cs:hover,
+.focus-red-cs:focus {
+  color: #9b0b05;
+}
+
+.focus-red-cs:hover::before,
+.focus-red-cs:focus::before {
+  content: '';
+
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(/img/cs-icon-red.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.focus-red-dota:hover,
+.focus-red-dota:focus {
+  color: #9b0b05;
+}
+
+.table-games-logo2:hover::before,
+.table-games-logo2:focus::before {
+  content: '';
+
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(/img/dota-icon-red.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table-games-logo2::before {
+  content: '';
+
+  position: absolute;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(/img/dota-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table-games-1 li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-cell-1 {
+  margin-left: 62px;
+  width: 382px;
+}
+
+.table-cell-2 {
+  width: 190px;
+}
+
+.table-cell-3 {
+  width: 162px;
+}
+
+.table-cell-4 {
+  width: 165px;
+}
+
+.line {
+  width: 895px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 /* footer */
