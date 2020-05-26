@@ -215,6 +215,11 @@ a {
   margin-left: 18px;
 }
 
+.salem-logo-wrapper a {
+  list-style: none;
+  color: #ffffff;
+}
+
 .book-text {
   font-family: 'intro book';
   font-size: 14px;
