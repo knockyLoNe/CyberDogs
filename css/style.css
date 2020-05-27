@@ -10,8 +10,8 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url(/img/background-layer.png),
-    url(/img/background-layer2.png);
+  background-image: url(../img/background-layer.png),
+    url(../img/background-layer2.png);
   background-position: top center, bottom center;
   background-repeat: no-repeat;
 }
@@ -36,28 +36,28 @@ body {
 
 @font-face {
   font-family: 'Intro';
-  src: url('/fonts/intro.otf');
+  src: url('../fonts/intro.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Intro-Book-Italic';
-  src: url('/fonts/Intro-Book-Italic.otf') format('eot');
+  src: url('../fonts/Intro-Book-Italic.otf') format('eot');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Intro-Book';
-  src: url('/fonts/Intro-Book.otf') format('otf');
+  src: url('../fonts/Intro-Book.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Intro-bold';
-  src: url('/fonts/Intro-Bold.otf') format('otf');
+  src: url('../fonts/Intro-Bold.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -128,13 +128,14 @@ a {
   content: '';
 
   position: absolute;
-  right: 44px;
-  top: 38px;
-  width: 35px;
-  height: 6px;
+  right: 15px;
+  top: 32px;
+  width: 100px;
+  height: 20px;
 
-  background-color: #9b0b05;
+  background-size: cover;
   background-image: url(/img/red-line.png);
+  background-position: center;
 }
 
 .main-navigation-wrapper {
@@ -158,7 +159,7 @@ a {
 .social-wrapper {
   padding-top: 13px;
   padding-right: 13px;
-  width: 120px;
+  width: 145px;
 }
 
 .header-button {
@@ -175,6 +176,11 @@ a {
   background-color: rgba(255, 45, 82, 0.2);
   border-radius: 10px;
   cursor: pointer;
+}
+
+.telegram-icon {
+  margin-top: 1px;
+  margin-right: 2px;
 }
 
 /* ----- */
@@ -239,6 +245,165 @@ a {
   width: 447px;
   height: 251;
   background-color: transparent;
+}
+
+.photo-player-hpp {
+  position: absolute;
+}
+
+.player-info {
+  position: absolute;
+  width: 197px;
+  height: 220px;
+  background-color: #dddddd;
+  top: 20px;
+  left: 210px;
+  border-radius: 8px;
+  padding-left: 15px;
+}
+
+.player-info p {
+  margin: 5px 0;
+  line-height: 9px;
+}
+
+.player-info h4 {
+  font-family: 'Intro';
+  font-size: 25px;
+  color: #9b0b05;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.player-font-head {
+  font-family: 'Intro Bold';
+  text-transform: none;
+  font-size: 14px;
+  color: #000000;
+}
+
+.player-info-font {
+  font-family: 'Intro bold';
+  font-size: 11px;
+  color: #454545;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+}
+
+.player-card-line {
+  width: 175px;
+  height: 1px;
+  background-color: #454545;
+}
+
+.player-card-line2 {
+  width: 175px;
+  height: 1px;
+  background-color: #000000;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.socialpage-player li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialpage-player ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.socialpage-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-page-before {
+  position: relative;
+}
+
+.steam {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/steam.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+
+.steam:hover,
+.steam:focus {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/steam-red.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+
+.vkontakte {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/vk.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+
+.vkontakte:hover,
+.vkontakte:focus {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/vk-red.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+
+.instagram {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/instagram.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
+
+.instagram:hover,
+.instagram:focus {
+  content: '';
+
+  position: absolute;
+
+  background-size: cover;
+  background-image: url(/img/instagram-red.png);
+  background-position: center;
+  width: 18px;
+  height: 18px;
 }
 
 /* ------ */
