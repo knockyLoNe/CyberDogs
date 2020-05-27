@@ -10,10 +10,10 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url(../img/background-layer.png),
-    url(../img/background-layer2.png);
-  background-position: top center, bottom center;
-  background-repeat: no-repeat;
+  background-image: url(../img/background1.png), url(../img/background2.png),
+    url(../img/background3.png);
+  background-position: top center, bottom center, center;
+  background-repeat: no-repeat, no-repeat, repeat;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -210,6 +210,19 @@ a {
   font-size: 25px;
 }
 
+.about-team::after {
+  content: '';
+  position: absolute;
+  right: 464px;
+  top: 258px;
+  width: 600px;
+  height: 300px;
+  background-size: cover;
+  background-image: url(/img/red-line.png);
+  background-position: center;
+  z-index: -1;
+}
+
 .salem-logo-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +249,24 @@ a {
 /* ------ */
 /* Карточки игроков */
 
+.back-photo {
+  position: absolute;
+  left: -140px;
+  top: 19px;
+  opacity: 0.5;
+}
+
+.back-photo2 {
+  position: absolute;
+  left: 183px;
+  top: 19px;
+  opacity: 0.5;
+}
+
+.photo-payer {
+  z-index: 5;
+}
+
 .payer-card {
   display: flex;
 
@@ -247,10 +278,6 @@ a {
   background-color: transparent;
 }
 
-.photo-player-hpp {
-  position: absolute;
-}
-
 .player-info {
   position: absolute;
   width: 197px;
@@ -260,6 +287,7 @@ a {
   left: 210px;
   border-radius: 8px;
   padding-left: 15px;
+  z-index: 6;
 }
 
 .player-info p {
@@ -550,7 +578,7 @@ a {
 
   margin-top: 30px;
   padding: 18px 0;
-
+  width: 100%;
   background-color: #9b0b05;
 }
 
