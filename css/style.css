@@ -434,12 +434,97 @@ a {
   height: 18px;
 }
 
+.slider-menu {
+  position: relative;
+}
+
+.btn-right::before {
+  content: '';
+
+  width: 20px;
+  height: 35px;
+
+  top: 189px;
+  left: 160px;
+
+  position: absolute;
+
+  background-image: url(../img/left-click.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-right::after {
+  content: '';
+
+  width: 20px;
+  height: 35px;
+
+  top: 189px;
+  right: 160px;
+
+  position: absolute;
+
+  background-image: url(../img/right-click.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ------ */
 
 .big-heading {
   font-size: 25px;
   line-height: 25px;
   text-align: center;
+}
+
+/* Слайдер */
+
+.carousel {
+  width: 447px;
+  height: 270px;
+
+  color: #ffffff;
+  transition: 1s ease-out all;
+  margin-left: -23em;
+  margin-right: 20px;
+  border-radius: 14px;
+}
+
+.carousel:last-child {
+  margin-left: -5em;
+}
+
+/*
+.player-info {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+*/
+
+.wrapper {
+  border-radius: 14px;
+  width: 790px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.transform {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  transition: 1s ease transform;
+  padding: 1em 0;
+  transform: translateX(80px);
+
+  margin-left: 18em;
+}
+
+.active {
+  z-index: 123;
+  transform: scale(1.1);
 }
 
 /* Таблица */
