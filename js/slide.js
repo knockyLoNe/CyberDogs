@@ -12,10 +12,7 @@ leftBtn.addEventListener("click", () => {
   STEP = STEP - 1;
   CURRENT_TRANSLATE = TRANSLATE * STEP;
 
-  transform.setAttribute(
-    "style",
-    `transform: translate(${CURRENT_TRANSLATE}px)`
-  );
+
   carousel.forEach((c, index) => {
     c.classList.remove("active");
   });
@@ -26,10 +23,7 @@ leftBtn.addEventListener("click", () => {
 rightBtn.addEventListener("click", () => {
   STEP = STEP + 1;
   CURRENT_TRANSLATE = TRANSLATE * STEP;
-  transform.setAttribute(
-    "style",
-    `transform: translate(${CURRENT_TRANSLATE}px)`
-  );
+
   carousel.forEach(c => {
     c.classList.remove("active");
   });

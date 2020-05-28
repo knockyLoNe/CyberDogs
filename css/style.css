@@ -10,10 +10,9 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url(../img/background1.png), url(../img/background2.png),
-    url(../img/background3.png);
-  background-position: top center, bottom center, center;
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-image: url(../img/background1.png), url(../img/background3.png);
+  background-position: top center, center;
+  background-repeat: no-repeat, repeat;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -213,8 +212,8 @@ a {
 .about-team::after {
   content: '';
   position: absolute;
-  right: 464px;
-  top: 258px;
+  right: 238px;
+  top: 60px;
   width: 600px;
   height: 300px;
   background-size: cover;
@@ -489,6 +488,7 @@ a {
   margin-left: -23em;
   margin-right: 20px;
   border-radius: 14px;
+  opacity: 0.4;
 }
 
 .carousel:last-child {
@@ -504,10 +504,11 @@ a {
 */
 
 .wrapper {
-  border-radius: 14px;
+  border-radius: 24px;
   width: 790px;
   overflow-x: hidden;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .transform {
@@ -516,7 +517,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   transition: 1s ease transform;
-  padding: 1em 0;
+
   transform: translateX(80px);
 
   margin-left: 18em;
@@ -525,9 +526,16 @@ a {
 .active {
   z-index: 123;
   transform: scale(1.1);
+  opacity: 1;
 }
 
 /* Таблица */
+.inner-content {
+  background-image: url(/img/background2.png);
+  background-position: 50px -90px;
+  background-repeat: no-repeat;
+}
+
 .table-games {
   font-family: 'intro';
   font-size: 14px;
@@ -704,4 +712,26 @@ footer ul {
 .social-button:focus {
   background-color: rgba(255, 45, 82, 0.2);
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: max-content;
+  }
+}
+
+main {
+  position: relative;
+}
+
+main::after {
+  content: '';
+  width: 100%;
+  background-image: url(../img/red-line.png);
+  height: 100px;
+  position: absolute;
+  bottom: -78px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
